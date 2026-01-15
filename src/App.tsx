@@ -13,7 +13,7 @@ function App() {
     <>
       <Navbr />
       <HeroSection 
-      rightImageSrc="./assets/HomePageGraphic.png" 
+      rightImageSrc={`${import.meta.env.BASE_URL}assets/HomePageGraphic.png`} 
       />
       <FeaturesSection
         cards={[
@@ -38,29 +38,29 @@ function App() {
         ]}
       />
       <MembersSection
-      topImageSrc="/assets/BenefitsPageGraphic.png"
-      leftDecoSrc="/assets/AbstractWaves.png"
-      bottomDecoSrc="/assets/Sparkles.png"
+        topImageSrc={`${import.meta.env.BASE_URL}assets/BenefitsPageGraphic.png`}
+        leftDecoSrc={`${import.meta.env.BASE_URL}assets/AbstractWaves.png`}
+        bottomDecoSrc={`${import.meta.env.BASE_URL}assets/Sparkles.png`}
       />
       <OurClass
         title="Our Classes"
         paragraph="Pick a style that matches your schedule and goals."
-        backgroundSrc="/assets/Circles.png"
+        backgroundSrc={`${import.meta.env.BASE_URL}assets/Circles.png`}
         items={[
           {
-            src: "/assets/pilates.png",
+            src: `${import.meta.env.BASE_URL}assets/pilates.png`,
             alt: "Pilates class",
             buttonText: "Pilates",
             onClick: () => console.log("Pilates"),
           },
           {
-            src: "/assets/yoga.png",
+            src: `${import.meta.env.BASE_URL}assets/yoga.png`,
             alt: "Yoga class",
             buttonText: "Yoga",
             onClick: () => console.log("Yoga"),
           },
           {
-            src: "/assets/bodyuilding.png",
+            src: `${import.meta.env.BASE_URL}assets/bodyuilding.png`,
             alt: "Body building class",
             buttonText: "Body Building",
             onClick: () => console.log("Body Building"),
@@ -68,11 +68,11 @@ function App() {
         ]}
       />
       <ContactSection
-        imageSrc="/assets/ContactUsPageGraphic.png"
+        imageSrc={`${import.meta.env.BASE_URL}assets/ContactUsPageGraphic.png`}
         onSubmit={(data) => console.log(data)}
       />
       <Footer
-        logoSrc="/assets/HomePageText.png"
+        logoSrc={`${import.meta.env.BASE_URL}assets/HomePageText.png`}
         phone="+39 (338) 291-8765"
         email="negarlaleh1@gmil.com"
         githubUrl="https://github.com/neline388"
