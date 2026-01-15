@@ -21,7 +21,7 @@ const navItems: NavItem[] = [
   { label: "Contact Us", href: "#contactform" },
 ];
 
-const logoSrc = "../assets/Logo.png";
+const logoSrc = `${import.meta.env.BASE_URL}assets/Logo.png`;
 
 export default function Navbr() {
   const theme = useTheme();
