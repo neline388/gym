@@ -1,12 +1,12 @@
 import { Box, Button, Container, Typography } from "@mui/material";
 
 type Props = {
-  watermarkText: string;
-  brand: string;
-  subtitle: string;
-  body: string;
-  primaryCtaText: string;
-  secondaryCtaText: string;
+  watermarkText?: string;
+  brand?: string;
+  subtitle?: string;
+  body?: string;
+  primaryCtaText?: string;
+  secondaryCtaText?: string;
   onPrimaryClick?: () => void;
   onSecondaryClick?: () => void;
   rightImageSrc: string;

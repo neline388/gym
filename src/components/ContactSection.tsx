@@ -8,8 +8,8 @@ import {
 } from "@mui/material";
 
 type Props = {
-  title: string;
-  subtitle: string;
+  title?: string;
+  subtitle?: string;
   imageSrc: string;
   onSubmit: (data: {
     name: string;

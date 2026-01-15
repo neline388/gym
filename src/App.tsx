@@ -11,32 +11,32 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-    <Navbr />
-    <HeroSection 
-    rightImageSrc="./assets/HomePageGraphic.png" 
-    />
-    <FeaturesSection
-      cards={[
-        {
-          icon: <FitnessCenterRoundedIcon />,
-          title: "State of the Art Facilities",
-          body: "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum a in lectus pellentesque.",
-          href: "#facilities",
-        },
-        {
-          icon: <GroupsRoundedIcon />,
-          title: "100's of Diverse Classes",
-          body: "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis.",
-          href: "#classes",
-        },
-        {
-          icon: <SupportAgentRoundedIcon />,
-          title: "Experts and Pro Trainers",
-          body: "Fusce vestibulum viverra ut cras. Nisl tortor egestas... (replace with your text).",
-          href: "#trainers",
-        },
-      ]}
-    />
+      <Navbr />
+      <HeroSection 
+      rightImageSrc="./assets/HomePageGraphic.png" 
+      />
+      <FeaturesSection
+        cards={[
+          {
+            icon: <FitnessCenterRoundedIcon />,
+            title: "State of the Art Facilities",
+            body: "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum a in lectus pellentesque.",
+            href: "#facilities",
+          },
+          {
+            icon: <GroupsRoundedIcon />,
+            title: "100's of Diverse Classes",
+            body: "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis.",
+            href: "#classes",
+          },
+          {
+            icon: <SupportAgentRoundedIcon />,
+            title: "Experts and Pro Trainers",
+            body: "Fusce vestibulum viverra ut cras. Nisl tortor egestas... (replace with your text).",
+            href: "#trainers",
+          },
+        ]}
+      />
       <MembersSection
       topImageSrc="/assets/BenefitsPageGraphic.png"
       leftDecoSrc="/assets/AbstractWaves.png"
@@ -47,9 +47,24 @@ function App() {
         paragraph="Pick a style that matches your schedule and goals."
         backgroundSrc="/assets/Circles.png"
         items={[
-          { src: "/assets/pilates.png", buttonText: "Pilates" },
-          { src: "/assets/yoga.png", buttonText: "Yoga" },
-          { src: "/assets/bodyuilding.png", buttonText: "Body Building" },
+          {
+            src: "/assets/pilates.png",
+            alt: "Pilates class",
+            buttonText: "Pilates",
+            onClick: () => console.log("Pilates"),
+          },
+          {
+            src: "/assets/yoga.png",
+            alt: "Yoga class",
+            buttonText: "Yoga",
+            onClick: () => console.log("Yoga"),
+          },
+          {
+            src: "/assets/bodyuilding.png",
+            alt: "Body building class",
+            buttonText: "Body Building",
+            onClick: () => console.log("Body Building"),
+          },
         ]}
       />
       <ContactSection

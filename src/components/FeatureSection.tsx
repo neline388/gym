@@ -16,8 +16,8 @@ export type FeatureCard = {
 };
 
 type Props = {
-  heading: string;
-  subheading: string;
+  heading?: string;
+  subheading?: string;
   cards: FeatureCard[]; 
 };
 
